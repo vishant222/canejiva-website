@@ -83,12 +83,14 @@ form?.addEventListener('submit', (event) => {
 filmToggle?.addEventListener('click', async () => {
   if (film.paused) {
     await film.play();
-    filmToggle.textContent = 'Pause film';
+    filmToggle.dataset.state = 'playing';
     filmToggle.setAttribute('aria-label', 'Pause brand film');
+    filmToggle.title = 'Pause film';
   } else {
     film.pause();
-    filmToggle.textContent = 'Play film';
+    filmToggle.dataset.state = 'paused';
     filmToggle.setAttribute('aria-label', 'Play brand film');
+    filmToggle.title = 'Play film';
   }
 });
 

@@ -10,7 +10,7 @@
     <meta property="og:image" content="media/portfolio.png" />
     <meta property="og:type" content="website" />
     <title>CANEJIVA | Desi Taste. Fresh Energy.</title>
-    <link rel="stylesheet" href="styles.css?v=video-edge-overscan-20261005" />
+    <link rel="stylesheet" href="styles.css?v=film-control-icons-20261005" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -137,7 +137,10 @@
           <video id="brand-film" muted loop playsinline poster="media/portfolio.png">
             <source src="media/canejiva-final.mp4" type="video/mp4" />
           </video>
-          <button id="film-toggle" class="film-toggle" type="button" aria-label="Play brand film">Play film</button>
+          <button id="film-toggle" class="film-toggle" type="button" aria-label="Play brand film" data-state="paused" title="Play film">
+            <svg class="film-toggle-icon film-toggle-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" /></svg>
+            <svg class="film-toggle-icon film-toggle-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zm6 0h4v14h-4z" /></svg>
+          </button>
         </div>
       </section>
 
@@ -232,6 +235,6 @@
         </form>
       </div>
     </dialog>
-    <script src="app.js?v=social-links-20261005"></script>
+    <script src="app.js?v=film-control-icons-20261005"></script>
   </body>
 </html>
