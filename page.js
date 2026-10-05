@@ -3,8 +3,8 @@ const pageProfiles = {
     eyebrow: 'The full range',
     title: 'One sugarcane story.<br />Three distinct pours.',
     copy: 'Meet the CANEJIVA family: Classic for clarity, Mint for a cool lift, and Ginger for a more expressive finish.',
-    visual: '../media/portfolio.png',
-    alt: 'CANEJIVA Classic, Mint and Ginger beverages',
+    visual: '../media/story.png',
+    alt: 'CANEJIVA Classic, Mint and Ginger beverages in a sugarcane field',
     content: `
       <section class="directory section">
         <div class="wrap"><p class="kicker">Choose your flavour</p><div class="directory-grid">
