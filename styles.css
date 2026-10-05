@@ -279,13 +279,13 @@ sup { position: relative; top: -0.45em; font-size: 0.42em; }
 .inner-page[data-page="products"] .page-hero-visual img { height: auto; min-height: 0; max-height: 550px; object-fit: contain; }
 .directory { background: var(--cream); }
 .directory-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-.directory-item { position: relative; display: flex; flex-direction: column; min-height: 580px; padding: 20px; overflow: hidden; border-radius: 7px; color: var(--ink); }
+.directory-item { position: relative; display: flex; flex-direction: column; min-height: 850px; padding: 20px; overflow: hidden; border-radius: 7px; color: var(--ink); }
 .directory-item.classic { background: #d6b739; }
 .directory-item.mint { background: #a6df6a; }
 .directory-item.ginger { background: #e0a141; }
 .directory-item > span { position: relative; z-index: 2; font-size: 11px; font-weight: 700; letter-spacing: 1px; }
-.directory-item img { position: absolute; z-index: 0; top: 45px; left: 50%; width: 118%; max-width: none; height: 372px; transform: translateX(-50%); object-fit: cover; transition: transform 420ms ease; }
-.directory-item::after { position: absolute; z-index: 1; top: 45px; right: 0; left: 0; height: 372px; background: rgba(118, 93, 0, 0.3); content: ""; pointer-events: none; transition: opacity 180ms ease; }
+.directory-item img { position: absolute; z-index: 0; top: 45px; left: 50%; width: 100%; max-width: none; height: calc(100% - 205px); transform: translateX(-50%); object-fit: contain; transition: transform 420ms ease; }
+.directory-item::after { position: absolute; z-index: 1; top: 45px; right: 0; bottom: 160px; left: 0; background: rgba(118, 93, 0, 0.3); content: ""; pointer-events: none; transition: opacity 180ms ease; }
 .directory-item.mint::after { background: rgba(28, 122, 37, 0.28); }
 .directory-item.ginger::after { background: rgba(148, 68, 0, 0.28); }
 .directory-item:hover::after, .directory-item:focus-visible::after { opacity: 0; }
@@ -352,7 +352,7 @@ sup { position: relative; top: -0.45em; font-size: 0.42em; }
   .page-hero-visual { max-height: 340px; }
   .page-hero-visual img { max-height: 340px; }
   .directory-grid { display: flex; width: 100%; padding-left: 16px; overflow-x: auto; scroll-snap-type: x mandatory; }
-  .directory-item { min-width: min(84vw, 345px); min-height: 555px; scroll-snap-align: start; }
+  .directory-item { min-width: min(84vw, 345px); min-height: 760px; scroll-snap-align: start; }
   .directory-item:last-child { margin-right: 16px; }
   .story-detail-layout .lead-copy { font-size: 24px; }
   .quote-band { padding: 59px 0; }
