@@ -68,13 +68,13 @@ sup { position: relative; top: -0.45em; font-size: 0.42em; }
 .intro-row { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(250px, 0.58fr); align-items: end; gap: 52px; }
 .intro-row p { max-width: 380px; margin-bottom: 3px; font-size: 18px; }
 .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-.product-card { position: relative; display: flex; flex-direction: column; min-height: 675px; padding: 20px; overflow: hidden; border-radius: 7px; color: var(--ink); }
+.product-card { position: relative; display: flex; flex-direction: column; min-height: 850px; padding: 20px; overflow: hidden; border-radius: 7px; color: var(--ink); }
 .product-card.classic { background: #d6b739; }
 .product-card.mint { background: #a6df6a; }
 .product-card.ginger { background: #e0a141; }
 .product-card-top { position: relative; z-index: 2; display: flex; justify-content: space-between; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
-.product-card img { position: absolute; z-index: 0; top: 54px; left: 50%; width: 118%; max-width: none; height: 430px; transform: translateX(-50%); object-fit: cover; transition: transform 500ms ease; }
-.product-card::after { position: absolute; z-index: 1; top: 54px; right: 0; left: 0; height: 430px; background: rgba(118, 93, 0, 0.3); content: ""; pointer-events: none; transition: opacity 180ms ease; }
+.product-card img { position: absolute; z-index: 0; top: 54px; left: 50%; width: 100%; max-width: none; height: calc(100% - 224px); transform: translateX(-50%); object-fit: contain; transition: transform 500ms ease; }
+.product-card::after { position: absolute; z-index: 1; top: 54px; right: 0; bottom: 170px; left: 0; background: rgba(118, 93, 0, 0.3); content: ""; pointer-events: none; transition: opacity 180ms ease; }
 .product-card.mint::after { background: rgba(28, 122, 37, 0.28); }
 .product-card.ginger::after { background: rgba(148, 68, 0, 0.28); }
 .product-card:hover::after, .product-card:focus-within::after { opacity: 0; }
@@ -194,9 +194,8 @@ sup { position: relative; top: -0.45em; font-size: 0.42em; }
   .intro-row h2 { margin-bottom: 22px; }
   .intro-row p { font-size: 16px; }
   .product-grid { display: flex; width: 100%; padding-left: 16px; overflow-x: auto; scroll-snap-type: x mandatory; }
-  .product-card { min-width: min(84vw, 345px); min-height: 584px; scroll-snap-align: start; }
+  .product-card { min-width: min(84vw, 345px); min-height: 760px; scroll-snap-align: start; }
   .product-card:last-child { margin-right: 16px; }
-  .product-card img, .product-card::after { height: 370px; }
   .story-copy .lead { font-size: 23px; }
   .story-image img { aspect-ratio: 1.08; }
   .film-heading { padding-bottom: 34px; }
